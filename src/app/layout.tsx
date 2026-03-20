@@ -4,14 +4,14 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { LanguageProvider } from "@/lib/i18n";
 
-const kanit = Kanit({ 
-  weight: ['300', '400', '500', '600', '700'],
+const kanit = Kanit({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin", "thai"],
-  display: 'swap',
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Chanachai Benmat - Portfolio",
+  title: "Portfolio",
   description: "Digital Technology & Innovation Student Portfolio",
 };
 
@@ -31,9 +31,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <LanguageProvider>
-            {children}
-          </LanguageProvider>
+          <LanguageProvider>{children}</LanguageProvider>
         </ThemeProvider>
       </body>
     </html>
