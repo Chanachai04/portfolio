@@ -23,7 +23,10 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="shrink-0 flex items-center">
-            <a href="#" className="text-xl font-bold bg-clip-text text-transparent bg-linear-to-r from-sky-500 to-blue-600 dark:from-sky-400 dark:to-blue-500">
+            <a
+              href="#"
+              className="text-xl font-bold bg-clip-text text-transparent bg-linear-to-r from-sky-500 to-blue-600 dark:from-sky-400 dark:to-blue-500"
+            >
               Chanachai
             </a>
           </div>

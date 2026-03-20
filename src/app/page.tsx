@@ -2,8 +2,18 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Education } from "@/components/Education";
-import { Certificates } from "@/components/Certificates";
-import { Portfolio } from "@/components/Portfolio";
+import dynamic from "next/dynamic";
+
+const Certificates = dynamic(() => import("@/components/Certificates").then(mod => mod.Certificates), {
+  loading: () => <div className="py-24 animate-pulse bg-slate-50 dark:bg-slate-900/50 h-[400px]" />,
+  ssr: true,
+});
+
+const Portfolio = dynamic(() => import("@/components/Portfolio").then(mod => mod.Portfolio), {
+  loading: () => <div className="py-24 animate-pulse bg-slate-50 dark:bg-slate-900/50 h-[400px]" />,
+  ssr: true,
+});
+
 import { Contact } from "@/components/Contact";
 
 export default function Home() {

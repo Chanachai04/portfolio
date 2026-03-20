@@ -58,6 +58,22 @@ export function Hero() {
           </motion.p>
 
           <motion.div
+            className="flex flex-wrap gap-2 justify-center md:justify-start"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.9 }}
+          >
+            {dict.hero.interestedPositions.map((pos: string, i: number) => (
+              <span
+                key={i}
+                className="px-4 py-1.5 bg-sky-50 dark:bg-sky-900/20 text-sky-600 dark:text-sky-400 text-sm font-medium rounded-full border border-sky-100 dark:border-sky-800/50 shadow-sm"
+              >
+                {pos}
+              </span>
+            ))}
+          </motion.div>
+
+          <motion.div
             className="flex flex-wrap items-center gap-4 justify-center md:justify-start pt-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -111,6 +127,7 @@ export function Hero() {
                 alt={dict.hero.name}
                 width={320}
                 height={320}
+                loading="eager"
                 className="w-full h-full object-cover rounded-full hover:scale-105 transition-transform duration-500"
               />
             </div>

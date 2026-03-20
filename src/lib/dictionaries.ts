@@ -11,9 +11,15 @@ export const th = {
     role: "นักศึกษาคณะศิลปศาสตร์และวิทยาศาสตร์ สาขาเทคโนโลยีดิจิทัลและนวัตกรรม",
     description:
       "มุ่งมั่นพัฒนาและสร้างสรรค์ผลงานทางด้านดิจิทัลและนวัตกรรม มีความสนใจในการพัฒนาเว็บไซต์และแอปพลิเคชัน",
-    contactMe: "ติดต่อผม",
+    contactMe: "ติดต่อ",
     viewWork: "ดูผลงาน",
     resume: "ดูเรซูเม่",
+    interestedPositions: [
+      "Frontend Developer",
+      "Backend Developer",
+      "Mobile Developer",
+      "AI Agent Builder",
+    ],
   },
   about: {
     title: "เกี่ยวกับผม",
@@ -32,18 +38,36 @@ export const th = {
   },
   education: {
     title: "การศึกษา",
-    current: "ปัจจุบัน",
-    degree: "ปริญญาตรี",
-    school: "มหาวิทยาลัยเอเชียอาคเนย์",
-    description:
-      "ศึกษาทางด้านเทคโนโลยีดิจิทัลและนวัตกรรม เน้นการประยุกต์ใช้เทคโนโลยีสมัยใหม่ในการแก้ปัญหาและสร้างสรรค์สิ่งใหม่",
+    history: [
+      {
+        degree: "ปริญญาตรี",
+        major: "สาขาเทคโนโลยีดิจิทัลและนวัตกรรม",
+        school: "มหาวิทยาลัยเอเชียอาคเนย์",
+        period: "2023 - ปัจจุบัน",
+        description:
+          "ศึกษาทางด้านเทคโนโลยีดิจิทัลและนวัตกรรม เน้นการประยุกต์ใช้เทคโนโลยีสมัยใหม่ในการแก้ปัญหาและสร้างสรรค์สิ่งใหม่",
+        current: true,
+      },
+      {
+        degree: "ประกาศนียบัตรวิชาชีพ (ปวช.)",
+        major: "สาขาคอมพิวเตอร์ธุรกิจ",
+        school: "วิทยาลัยเทคโนโลยีหมู่บ้านครู",
+        period: "2021 - 2023",
+        description:
+          "ศึกษาพื้นฐานทางด้านคอมพิวเตอร์ธุรกิจ การจัดการฐานข้อมูล และการพัฒนาโปรแกรมเบื้องต้น",
+        current: false,
+      },
+    ],
   },
   certificates: {
     title: "เกียรติบัตร",
+    openPdf: "เปิดดู PDF",
   },
   portfolio: {
     title: "ผลงาน",
     viewProject: "ดูโปรเจกต์",
+    readMore: "อ่านเพิ่มเติม",
+    showLess: "แสดงน้อยลง",
     projects: [
       {
         title: "Manage Task",
@@ -107,6 +131,12 @@ export const en = {
     contactMe: "Contact Me",
     viewWork: "View Work",
     resume: "View Resume",
+    interestedPositions: [
+      "Frontend Developer",
+      "Backend Developer",
+      "Mobile Developer",
+      "AI Agent Builder",
+    ],
   },
   about: {
     title: "About Me",
@@ -125,18 +155,36 @@ export const en = {
   },
   education: {
     title: "Education",
-    current: "Present",
-    degree: "Bachelor's Degree",
-    school: "South East Asia University",
-    description:
-      "Studying Digital Technology and Innovation, focusing on applying modern technology to solve problems and innovate.",
+    history: [
+      {
+        degree: "Bachelor's Degree",
+        major: "Digital Technology and Innovation",
+        school: "South East Asia University",
+        period: "2023 - Present",
+        description:
+          "Studying Digital Technology and Innovation, focusing on applying modern technology to solve problems and innovate.",
+        current: true,
+      },
+      {
+        degree: "Vocational Certificate",
+        major: "Business Computer",
+        school: "Krutee Village Technology College",
+        period: "2021 - 2023",
+        description:
+          "Studied fundamentals of business computing, database management, and basic programming.",
+        current: false,
+      },
+    ],
   },
   certificates: {
     title: "Certificates",
+    openPdf: "Open PDF",
   },
   portfolio: {
     title: "Portfolio",
     viewProject: "View Project",
+    readMore: "Read More",
+    showLess: "Show Less",
     projects: [
       {
         title: "Manage Task",

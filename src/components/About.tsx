@@ -8,7 +8,11 @@ export function About() {
   const { dict } = useLanguage();
 
   return (
-    <section id="about" className="py-24 bg-slate-50 dark:bg-slate-900/50">
+    <section
+      id="about"
+      className="py-24 bg-slate-50 dark:bg-slate-900/50"
+      style={{ contentVisibility: "auto" } as React.CSSProperties}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,8 +39,12 @@ export function About() {
             <div className="w-12 h-12 bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <User size={24} />
             </div>
-            <h3 className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">{dict.about.age}</h3>
-            <p className="text-lg font-semibold text-slate-900 dark:text-slate-100">{dict.about.ageValue}</p>
+            <h3 className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">
+              {dict.about.age}
+            </h3>
+            <p className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+              {dict.about.ageValue}
+            </p>
           </motion.div>
 
           {/* Card 2: Status */}
@@ -50,8 +58,12 @@ export function About() {
             <div className="w-12 h-12 bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <GraduationCap size={24} />
             </div>
-            <h3 className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">Status</h3>
-            <p className="text-lg font-semibold text-slate-900 dark:text-slate-100">{dict.about.education}</p>
+            <h3 className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">
+              Status
+            </h3>
+            <p className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+              {dict.about.education}
+            </p>
           </motion.div>
 
           {/* Card 3: University */}
@@ -65,8 +77,12 @@ export function About() {
             <div className="w-12 h-12 bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Building2 size={24} />
             </div>
-            <h3 className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">{dict.about.faculty}</h3>
-            <p className="text-lg font-semibold text-slate-900 dark:text-slate-100">{dict.about.university}</p>
+            <h3 className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">
+              {dict.about.faculty}
+            </h3>
+            <p className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+              {dict.about.university}
+            </p>
           </motion.div>
 
           {/* Card 4: Major */}
@@ -80,8 +96,12 @@ export function About() {
             <div className="w-12 h-12 bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <BookOpen size={24} />
             </div>
-            <h3 className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">Major</h3>
-            <p className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-linear-to-r from-sky-500 to-blue-600">{dict.about.major}</p>
+            <h3 className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">
+              Major
+            </h3>
+            <p className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-linear-to-r from-sky-500 to-blue-600">
+              {dict.about.major}
+            </p>
           </motion.div>
         </div>
 
@@ -109,12 +129,17 @@ export function About() {
               className="p-8 bg-white dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm"
             >
               <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-6 flex items-center gap-3">
-                <span className="w-8 h-8 rounded-lg bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 flex items-center justify-center">💻</span>
+                <span className="w-8 h-8 rounded-lg bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 flex items-center justify-center">
+                  💻
+                </span>
                 {dict.skills.programming}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {["HTML", "CSS", "JavaScript", "TypeScript", "Dart", "Python"].map((skill) => (
-                  <span key={skill} className="px-4 py-2 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300">
+                {["JavaScript", "TypeScript", "Dart", "Python"].map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-4 py-2 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300"
+                  >
                     {skill}
                   </span>
                 ))}
@@ -130,12 +155,24 @@ export function About() {
               className="p-8 bg-white dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm"
             >
               <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-6 flex items-center gap-3">
-                <span className="w-8 h-8 rounded-lg bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 flex items-center justify-center">🚀</span>
+                <span className="w-8 h-8 rounded-lg bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 flex items-center justify-center">
+                  🚀
+                </span>
                 {dict.skills.framework}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {["React", "Nextjs", "Vite", "Flutter", "React Native", "Tailwindcss"].map((skill) => (
-                  <span key={skill} className="px-4 py-2 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300">
+                {[
+                  "React",
+                  "Nextjs",
+                  "Vite",
+                  "Flutter",
+                  "React Native",
+                  "Tailwindcss",
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-4 py-2 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300"
+                  >
                     {skill}
                   </span>
                 ))}
@@ -151,15 +188,22 @@ export function About() {
               className="p-8 bg-white dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm"
             >
               <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-6 flex items-center gap-3">
-                <span className="w-8 h-8 rounded-lg bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 flex items-center justify-center">💾</span>
+                <span className="w-8 h-8 rounded-lg bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 flex items-center justify-center">
+                  💾
+                </span>
                 {dict.skills.database}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {["MySQL", "Postgresql", "Firebase", "Supabase"].map((skill) => (
-                  <span key={skill} className="px-4 py-2 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300">
-                    {skill}
-                  </span>
-                ))}
+                {["MySQL", "Postgresql", "Firebase", "Supabase"].map(
+                  (skill) => (
+                    <span
+                      key={skill}
+                      className="px-4 py-2 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300"
+                    >
+                      {skill}
+                    </span>
+                  ),
+                )}
               </div>
             </motion.div>
           </div>
