@@ -2,10 +2,12 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Education } from "@/components/Education";
+import { Certificates } from "@/components/Certificates";
 import { Portfolio } from "@/components/Portfolio";
 import { Contact } from "@/components/Contact";
 
 export default function Home() {
+  // Force HMR recompile
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
       <Navbar />
@@ -13,6 +15,7 @@ export default function Home() {
         <Hero />
         <About />
         <Education />
+        <Certificates />
         <Portfolio />
         <Contact />
       </main>

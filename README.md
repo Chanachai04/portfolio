@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio 🚀
 
-## Getting Started
+ยินดีต้อนรับสู่เว็บไซต์พอร์ตโฟลิโอส่วนตัวของผม! โปรเจกต์นี้จัดทำขึ้นเพื่อแสดงทักษะ การศึกษา เกียรติบัตร และผลงานต่างๆ ในฐานะนักศึกษาคณะศิลปศาสตร์และวิทยาศาสตร์ สาขาเทคโนโลยีดิจิทัลและนวัตกรรม โดยเน้นการพัฒนาเว็บไซต์ที่ทันสมัย สวยงาม ใช้งานง่าย และรองรับการแสดงผลทุกหน้าจอ
 
-First, run the development server:
+## ✨ คุณสมบัติเด่น
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **🌐 รองรับ 2 ภาษา:** รองรับทั้งภาษาไทย (TH) และภาษาอังกฤษ (EN) ผ่าน custom `LanguageProvider` context
+- **🌓 เปลี่ยนธีม:** รองรับทั้งโหมดสว่าง (Light Mode) และโหมดมืด (Dark Mode) พร้อมการเปลี่ยนผ่านที่นุ่มนวล (ผ่าน `next-themes`)
+- **⚡ ดีไซน์ทันสมัยและอนิเมชัน:** ใช้เอฟเฟกต์ Glassmorphism, การเลื่อนหน้าเว็บที่ลื่นไหล และไมโครอนิเมชันที่สวยงามด้วย `framer-motion`
+- **📱 รองรับทุกหน้าจอ (Responsive):** พัฒนาด้วย Tailwind CSS เพื่อให้แสดงผลได้อย่างสมบูรณ์แบบทั้งบนคอมพิวเตอร์ แท็บเล็ต และมือถือ
+- **📂 โครงสร้างแบบ Component-Driven:** แยกโค้ดเป็นส่วนๆ เพื่อให้นำกลับมาใช้ใหม่ได้ง่าย (Hero, About, Education, Certificates, Portfolio, และ Contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ เทคโนโลยีที่ใช้
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+โปรเจกต์นี้พัฒนาขึ้นด้วยเทคโนโลยีล่าสุด:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
+- **Library:** [React 19](https://react.dev/)
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
 
-## Learn More
+## 🚀 การเริ่มต้นใช้งาน
 
-To learn more about Next.js, take a look at the following resources:
+หากต้องการรันโปรเจกต์นี้ในเครื่องของคุณ ให้ทำตามขั้นตอนดังนี้:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **คัดลอกโปรเจกต์ (Clone)**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/Chanachai04/portfolio.git
+   cd portfolio
+   ```
 
-## Deploy on Vercel
+2. **ติดตั้ง Dependency**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   # หรือ
+   yarn install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **เริ่มรัน Server สำหรับพัฒนา**
+
+   ```bash
+   npm run dev
+   # หรือ
+   yarn dev
+   ```
+
+4. **เปิดดูในเบราว์เซอร์**
+   เข้าไปที่ [http://localhost:3000](http://localhost:3000) เพื่อดูผลลัพธ์
+
+## 🤝 การติดต่อและการส่งข้อเสนอแนะ
+
+หากมีคำถามหรือสนใจร่วมงานกับผม สามารถติดต่อได้ที่นี่เลยครับ:
+
+- **GitHub:** [Chanachai04](https://github.com/Chanachai04)

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/i18n";
-import { MessageCircle, Github } from "lucide-react";
+import { MessageCircle, Mail } from "lucide-react";
 
 export function Contact() {
   const { dict } = useLanguage();
@@ -44,23 +44,21 @@ export function Contact() {
             </div>
           </motion.a>
 
-          {/* Action Card: GitHub */}
+          {/* Action Card: Email */}
           <motion.a
-            href="https://github.com/Chanachai04"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:chn.benmat@gmail.com"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.2 }}
             className="group p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:border-sky-500 dark:hover:border-sky-500 hover:shadow-lg transition-all flex flex-col items-center gap-4 text-center"
           >
-            <div className="w-16 h-16 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Github size={32} />
+            <div className="w-16 h-16 bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+              <Mail size={32} />
             </div>
             <div>
-              <h3 className="font-bold text-slate-900 dark:text-slate-100">{dict.contact.github}</h3>
-              <p className="text-slate-500 dark:text-slate-400">Chanachai04</p>
+              <h3 className="font-bold text-slate-900 dark:text-slate-100">{dict.contact.email}</h3>
+              <p className="text-slate-500 dark:text-slate-400">chn.benmat@gmail.com</p>
             </div>
           </motion.a>
         </div>

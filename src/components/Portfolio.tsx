@@ -2,7 +2,17 @@
 
 import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/i18n";
+import Image from "next/image";
 import { ExternalLink, Github } from "lucide-react";
+
+interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  image: string;
+  github: string;
+  demo: string;
+}
 
 export function Portfolio() {
   const { dict } = useLanguage();
@@ -24,24 +34,39 @@ export function Portfolio() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {dict.portfolio.projects.map((project: any, index: number) => (
+          {dict.portfolio.projects.map((project: Project, index: number) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-shadow group flex flex-col"
+              className="bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-shadow group flex flex-col relative"
             >
-              <div className="h-48 bg-slate-200 dark:bg-slate-800 relative overflow-hidden">
-                {/* Placeholder Image - You can replace this with actual image src later */}
-                <div className="absolute inset-0 bg-linear-to-br from-sky-400 to-blue-600 opacity-80 group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-2xl">
-                  {project.title}
+              {/* This link covers the entire card and makes it clickable */}
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute inset-0 z-10"
+                aria-label={`View project ${project.title}`}
+              ></a>
+              
+              <div className="h-48 relative overflow-hidden block">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-slate-950/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none">
+                  <span className="text-white text-sm font-medium flex items-center gap-1">
+                    {dict.portfolio.viewProject} <ExternalLink size={14} />
+                  </span>
                 </div>
               </div>
-              
-              <div className="p-6 flex-1 flex flex-col">
+
+              <div className="p-6 flex-1 flex flex-col relative z-20 pointer-events-none">
                 <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">
                   {project.title}
                 </h3>
@@ -58,12 +83,22 @@ export function Portfolio() {
                     </span>
                   ))}
                 </div>
-                <div className="flexitems-center gap-4 border-t border-slate-100 dark:border-slate-800 pt-4 flex">
+                <div className="flex items-center gap-4 border-t border-slate-100 dark:border-slate-800 pt-4 pointer-events-auto">
                   {/* Action buttons mapping */}
-                  <a href="#" className="flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-sky-600 dark:text-slate-400 dark:hover:text-sky-400 transition-colors">
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-sky-600 dark:text-slate-400 dark:hover:text-sky-400 transition-colors"
+                  >
                     <ExternalLink size={16} /> Live Demo
                   </a>
-                  <a href="#" className="flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-sky-600 dark:text-slate-400 dark:hover:text-sky-400 transition-colors">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-sky-600 dark:text-slate-400 dark:hover:text-sky-400 transition-colors"
+                  >
                     <Github size={16} /> Source
                   </a>
                 </div>
