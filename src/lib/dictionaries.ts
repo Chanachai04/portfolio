@@ -74,7 +74,7 @@ export const th = {
         description:
           "แอปพลิเคชันสำหรับจัดการงานรายวันของคุณ สร้างขึ้นด้วย Next.js และ Supabase ช่วยให้คุณติดตามงาน จัดการตารางเวลา และเพิ่มประสิทธิภาพการทำงานด้วยหน้าจอที่ใช้งานง่ายและสะอาดตา",
         tags: ["Next.js", "React", "Supabase", "Tailwind CSS"],
-        image: "/manage-task.png",
+        image: "/projects/manage-task.png",
         github: "https://github.com/Chanachai04/next-manage-task-app.git",
         demo: "https://manage-task-zeta.vercel.app/",
       },
@@ -83,7 +83,7 @@ export const th = {
         description:
           "แอปพลิเคชันบันทึกและติดตามการกินอาหาร โดดเด่นด้วยดีไซน์ทันสมัยพัฒนาด้วย Next.js, React, Tailwind CSS และ Supabase",
         tags: ["Next.js", "React", "Tailwind CSS", "Supabase"],
-        image: "/food-tracker.png",
+        image: "/projects/food-tracker.png",
         github: "https://github.com/Chanachai04/next-food-tracker-app.git",
         demo: "https://food-tracker-nine-xi.vercel.app/",
       },
@@ -92,7 +92,7 @@ export const th = {
         description:
           "แอปพลิเคชันรวมเครื่องมือคำนวณที่จำเป็นในชีวิตประจำวัน พัฒนาโดยใช้เทคโนโลยีสมัยใหม่ เพื่อความรวดเร็ว แม่นยำ และรองรับการใช้งานทุกระดับหน้าจอ (Responsive Design)",
         tags: ["Next.js", "React", "Tailwind CSS"],
-        image: "/calculator-varity.png",
+        image: "/projects/calculator-varity.png",
         github: "https://github.com/Chanachai04/next-calculator-varity-app.git",
         demo: "https://calculator-varity.vercel.app/",
       },
@@ -101,7 +101,7 @@ export const th = {
         description:
           "เว็บแอปพลิเคชันที่ทันสมัย สวยงาม และรองรับการแสดงผลทุกหน้าจอ เพื่อช่วยให้คุณคำนวณการหารค่าใช้จ่ายกับเพื่อนๆ ได้อย่างง่ายดาย มาพร้อมกับดีไซน์ธีมสีฟ้าพรีเมียมและเอฟเฟกต์ Glassmorphism",
         tags: ["Next.js", "React", "Tailwind CSS"],
-        image: "/money-share.png",
+        image: "/projects/money-share.png",
         github: "https://github.com/Chanachai04/next-money-share.git",
         demo: "https://money-share-swart.vercel.app/",
       },
@@ -225,7 +225,7 @@ export const en = {
         description:
           "A daily task management application built with Next.js and Supabase. Helps you track tasks, manage schedules, and improve productivity with a clean and intuitive interface.",
         tags: ["Next.js", "React", "Supabase", "Tailwind CSS"],
-        image: "/manage-task.png",
+        image: "/projects/manage-task.png",
         github: "https://github.com/Chanachai04/next-manage-task-app.git",
         demo: "https://manage-task-zeta.vercel.app/",
       },
@@ -234,7 +234,7 @@ export const en = {
         description:
           "A food tracking and logging application featuring a modern design. Developed with Next.js, React, Tailwind CSS, and Supabase.",
         tags: ["Next.js", "React", "Tailwind CSS", "Supabase"],
-        image: "/food-tracker.png",
+        image: "/projects/food-tracker.png",
         github: "https://github.com/Chanachai04/next-food-tracker-app.git",
         demo: "https://food-tracker-nine-xi.vercel.app/",
       },
@@ -243,7 +243,7 @@ export const en = {
         description:
           "An application combining essential daily calculation tools. Developed using modern technologies for speed, accuracy, and fully responsive design.",
         tags: ["Next.js", "React", "Tailwind CSS"],
-        image: "/calculator-varity.png",
+        image: "/projects/calculator-varity.png",
         github: "https://github.com/Chanachai04/next-calculator-varity-app.git",
         demo: "https://calculator-varity.vercel.app/",
       },
@@ -252,7 +252,7 @@ export const en = {
         description:
           "A modern, beautiful, and fully responsive web application to easily calculate shared expenses with friends. Features a premium blue theme and glassmorphism effects.",
         tags: ["Next.js", "React", "Tailwind CSS"],
-        image: "/money-share.png",
+        image: "/projects/money-share.png",
         github: "https://github.com/Chanachai04/next-money-share.git",
         demo: "https://money-share-swart.vercel.app/",
       },

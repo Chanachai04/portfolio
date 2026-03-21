@@ -56,7 +56,6 @@ export function Portfolio() {
     }
   }, []);
 
-
   const scroll = (direction: "left" | "right") => {
     const newIndex =
       direction === "left"
@@ -80,10 +79,7 @@ export function Portfolio() {
   };
 
   return (
-    <section
-      id="portfolio"
-      className="py-24 bg-slate-50 dark:bg-slate-900/50"
-    >
+    <section id="portfolio" className="py-24 bg-slate-50 dark:bg-slate-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -203,9 +199,11 @@ const ProjectCard = memo(function ProjectCard({
   const DESC_MAX_LENGTH = 80;
   const isLong = project.description.length > DESC_MAX_LENGTH;
 
-  const isInternal = project.demo.startsWith('/');
+  const isInternal = project.demo.startsWith("/");
   const LinkComponent = isInternal ? Link : "a";
-  const linkProps = isInternal ? {} : { target: "_blank", rel: "noopener noreferrer" };
+  const linkProps = isInternal
+    ? {}
+    : { target: "_blank", rel: "noopener noreferrer" };
 
   return (
     <motion.div
@@ -278,7 +276,12 @@ const ProjectCard = memo(function ProjectCard({
             {...linkProps}
             className="flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-sky-600 dark:text-slate-400 dark:hover:text-sky-400 transition-colors"
           >
-            {isInternal ? <ChevronRight size={16} /> : <ExternalLink size={16} />} {isInternal ? "Details" : "Live Demo"}
+            {isInternal ? (
+              <ChevronRight size={16} />
+            ) : (
+              <ExternalLink size={16} />
+            )}{" "}
+            {isInternal ? "Details" : "Live Demo"}
           </LinkComponent>
           <a
             href={project.github}

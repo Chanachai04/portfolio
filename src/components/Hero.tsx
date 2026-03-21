@@ -111,7 +111,7 @@ export function Hero() {
               GitHub
             </a>
             <a
-              href="/resume.pdf"
+              href="/resume/resume.pdf"
               className="flex items-center gap-2 px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-sky-500 dark:hover:border-sky-500 text-slate-700 dark:text-slate-300 rounded-full font-medium transition-all w-full sm:w-auto justify-center"
             >
               <FileText size={18} />
@@ -129,7 +129,7 @@ export function Hero() {
           <div className="relative w-80 h-80 rounded-full bg-linear-to-tr from-sky-500 to-blue-600 p-1">
             <div className="w-full h-full rounded-full bg-white dark:bg-slate-950 flex items-center justify-center overflow-hidden">
               <Image
-                src="/me.jpg"
+                src="/images/me.jpg"
                 alt={dict.hero.name}
                 width={320}
                 height={320}

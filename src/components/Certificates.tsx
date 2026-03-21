@@ -37,37 +37,37 @@ export function Certificates() {
     {
       name: "Word 2019",
       category: "MOS Olympic Thailand Competition 2025",
-      file: "/word-2019.pdf",
+      file: "/certificates/word-2019.pdf",
     },
     {
       name: "Microsoft Office Specialist - Associate (Office 2019)",
       category: "MOS Olympic Thailand Competition 2025",
-      file: "/microsoft-office-specialist-associate-office-2019.pdf",
+      file: "/certificates/microsoft-office-specialist-associate-office-2019.pdf",
     },
     {
       name: "Excel 2019",
       category: "MOS Olympic Thailand Competition 2024",
-      file: "/excel-2019.pdf",
+      file: "/certificates/excel-2019.pdf",
     },
     {
       name: "Excel 2019 Expert",
       category: "MOS Olympic Thailand Competition 2024",
-      file: "/excel-2019-expert.pdf",
+      file: "/certificates/excel-2019-expert.pdf",
     },
     {
       name: "PowerPoint 2019",
       category: "MOS Olympic Thailand Competition 2024",
-      file: "/powerpoint-2019.pdf",
+      file: "/certificates/powerpoint-2019.pdf",
     },
     {
       name: "ICDL",
       category: "ICDL THAILAND 2024",
-      file: "/icdl.pdf",
+      file: "/certificates/icdl.pdf",
     },
     {
       name: "ITPEC",
       category: "Infomation Technology passport Examination 2024",
-      file: "/itpec.pdf",
+      file: "/certificates/itpec.pdf",
     },
   ];
 
