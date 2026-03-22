@@ -98,14 +98,16 @@ export function Portfolio() {
             <div className="hidden lg:flex absolute right-0 bottom-0 gap-2">
               <button
                 onClick={() => scroll("left")}
-                className="p-2 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-white dark:hover:bg-slate-900 text-slate-600 dark:text-slate-400 transition-colors shadow-sm"
+                className="p-2 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-600 dark:text-slate-400 transition-colors disabled:opacity-30 disabled:pointer-events-none"
+                disabled={activeIndex === 0}
                 aria-label="Scroll left"
               >
                 <ChevronLeft size={20} />
               </button>
               <button
                 onClick={() => scroll("right")}
-                className="p-2 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-white dark:hover:bg-slate-900 text-slate-600 dark:text-slate-400 transition-colors shadow-sm"
+                className="p-2 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-600 dark:text-slate-400 transition-colors disabled:opacity-30 disabled:pointer-events-none"
+                disabled={activeIndex === totalPages - 1}
                 aria-label="Scroll right"
               >
                 <ChevronRight size={20} />

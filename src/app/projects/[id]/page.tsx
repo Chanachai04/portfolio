@@ -190,17 +190,17 @@ export default function ProjectDetail({
               {Array.from({ length: totalPages }).map((_, pageIndex) => {
                 const pageImages = images.slice(
                   pageIndex * itemsPerPage,
-                  (pageIndex + 1) * itemsPerPage
+                  (pageIndex + 1) * itemsPerPage,
                 );
                 return (
                   <div
                     key={pageIndex}
-                    className="w-screen sm:w-full shrink-0 snap-start flex justify-start gap-4 sm:gap-6 px-4 sm:px-0"
+                    className="w-screen sm:w-full shrink-0 snap-start flex justify-center sm:justify-start gap-4 sm:gap-6 px-4 sm:px-0"
                   >
                     {pageImages.map((img: string, idx: number) => (
                       <div
                         key={idx}
-                        className="shrink-0 w-[85vw] sm:w-[320px] md:w-[360px] max-w-full aspect-9/19 relative rounded-3xl overflow-hidden shadow-xl border border-slate-100 dark:border-slate-800"
+                        className="shrink-0 w-[80vw] sm:w-[calc(50%-1.5rem)] lg:w-[320px] max-w-full aspect-9/19 relative rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800"
                       >
                         <Image
                           src={img}
@@ -209,7 +209,7 @@ export default function ProjectDetail({
                           className="object-cover"
                           unoptimized
                           priority={pageIndex === 0 && idx === 0}
-                          sizes="(max-width: 640px) 85vw, 360px"
+                          sizes="(max-width: 768px) 80vw, (max-width: 1024px) 45vw, 320px"
                         />
                       </div>
                     ))}

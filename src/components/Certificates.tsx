@@ -69,6 +69,17 @@ export function Certificates() {
       category: "Infomation Technology passport Examination 2024",
       file: "/certificates/itpec.pdf",
     },
+    {
+      name: "ใบรับรองการฝึกงาน",
+      category: "บริษัท มายด์ ซอฟแวร์ ดีเวลลอปเม้นท์ จำกัด",
+      file: "/certificates/internship.jpg",
+    },
+    {
+      name: "สิ่งประดิษฐ์ด้านวัตกรรมซอฟต์แวร์และระบบสมองกลฝังตัว",
+      category:
+        "การแข่งขันทักษะวิชาชีพ การประกวดนวัตกรรมสิงประดิษฐ์และกีฬา ระดับชาติ",
+      file: "/certificates/vocational-skills-competition.jpg",
+    },
   ];
 
   const totalPages = Math.ceil(certificateFiles.length / itemsPerPage);
@@ -86,7 +97,6 @@ export function Certificates() {
       }
     }
   }, []);
-
 
   const scroll = (direction: "left" | "right") => {
     const newIndex =
@@ -111,10 +121,7 @@ export function Certificates() {
   };
 
   return (
-    <section
-      id="certificates"
-      className="py-24 bg-white dark:bg-slate-950"
-    >
+    <section id="certificates" className="py-24 bg-white dark:bg-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -133,14 +140,16 @@ export function Certificates() {
             <div className="hidden lg:flex absolute right-0 bottom-0 gap-2">
               <button
                 onClick={() => scroll("left")}
-                className="p-2 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-600 dark:text-slate-400 transition-colors"
+                className="p-2 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-600 dark:text-slate-400 transition-colors disabled:opacity-30 disabled:pointer-events-none"
+                disabled={activeIndex === 0}
                 aria-label="Scroll left"
               >
                 <ChevronLeft size={20} />
               </button>
               <button
                 onClick={() => scroll("right")}
-                className="p-2 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-600 dark:text-slate-400 transition-colors"
+                className="p-2 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-600 dark:text-slate-400 transition-colors disabled:opacity-30 disabled:pointer-events-none"
+                disabled={activeIndex === totalPages - 1}
                 aria-label="Scroll right"
               >
                 <ChevronRight size={20} />
