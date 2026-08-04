@@ -102,7 +102,7 @@ export function Hero() {
               {dict.hero.contactMe}
             </a>
             <a
-              href="https://github.com/Chanachai04"
+              href="https://github.com/chn-benmat"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-500 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300 rounded-full font-medium transition-all w-full sm:w-auto justify-center"
